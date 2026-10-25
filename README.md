@@ -14,3 +14,49 @@
 <img width="611" height="471" alt="8labadz" src="https://github.com/user-attachments/assets/649f85d6-38b0-4581-8625-9803214ed121" />
 ## 2. Реализация программы
 ```c
+﻿#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "RUS");
+    int a, n, i;
+    double product = 1.0; 
+
+    printf("Введите a: ");
+    scanf("%d", &a);
+    printf("Введите n: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+
+        double ni = (double)i;
+
+        product = product * (a - ni * n);
+    }
+
+    printf("Результат: %.2f\n", product);
+
+    return 0;
+}
+```
+## 3. Реализация работы программы
+### Пример 1:
+```
+Введите a: 4
+Введите n: 3
+Результат: 10,00
+```
+### Пример 2:
+```
+Введите a: 1
+Введите n: 2
+Результат: 3,00
+```
+### Пример 3:
+```
+Введите a: 6
+Введите n: 2
+Результат: 8,00
+```
+## Информация о разработчике
+Щербаков Дмитрий, бИЦТ-261
